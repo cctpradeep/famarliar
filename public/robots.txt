@@ -1,0 +1,12 @@
+# famarliar.com
+User-agent: *
+Allow: /
+
+# AI answer engines are welcome; this content is meant to be found.
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://www.famarliar.com/sitemap.xml

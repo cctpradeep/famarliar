@@ -1,0 +1,27 @@
+// famarliar.com: Cloudflare Workers configuration.
+//
+// Cloudflare Workers Builds deploys this repository:
+//   main              -> production, the live famarliar.com
+//   any other branch  -> a preview link only, never live
+{
+  // Must match the Worker's name in the Cloudflare dashboard exactly, or the
+  // build fails.
+  "name": "young-leaf-c6a4",
+  "compatibility_date": "2026-06-01",
+
+  // The whole site is static files in public/. There is no Worker script.
+  "assets": {
+    "directory": "./public"
+  },
+
+  // famarliar.com is attached in the Cloudflare dashboard. Cloudflare's
+  // documented way to keep dashboard-managed domains is to leave every route
+  // key out of this file and set workers_dev to false. That also switches off
+  // the duplicate copy of the site at the public workers.dev address.
+  "workers_dev": false,
+
+  // Without this line, previews would follow workers_dev and switch off too.
+  // Preview links are public but unguessable, and let each change be checked
+  // before its pull request is merged.
+  "preview_urls": true
+}
