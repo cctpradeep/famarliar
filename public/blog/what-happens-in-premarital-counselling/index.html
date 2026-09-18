@@ -316,6 +316,35 @@ footer.site a:hover{color:var(--dark-fg); text-decoration:underline;}
   *{transition-duration:.01ms !important; animation-duration:.01ms !important;}
   html{scroll-behavior:auto;}
 }
+
+/* ============================================================
+   19. MARRIAGE READY  (weekly outline, time table, pricing cards)
+   ============================================================ */
+.mr-weeks{margin:22px 0 0; padding-left:1.4rem;}
+.mr-weeks li{margin-bottom:.55rem;}
+.mr-table{width:100%; border-collapse:collapse; margin-top:22px; font-size:.99rem;}
+.mr-table th,.mr-table td{text-align:left; padding:12px 14px; border-bottom:1px solid var(--border); vertical-align:top;}
+.mr-table th{font-family:"Jost",sans-serif; font-weight:600;}
+.mr-track{margin-top:34px;}
+.mr-track h3{margin-bottom:14px;}
+.mr-plan{display:flex; flex-direction:column; gap:16px;}
+.mr-plan.is-featured{border-color:var(--primary); box-shadow:inset 0 0 0 1px var(--primary);}
+.mr-badge{
+  display:inline-block; align-self:flex-start; font-family:"Jost",sans-serif; font-weight:600;
+  font-size:.82rem; letter-spacing:.02em; padding:5px 12px; border-radius:999px;
+  background:var(--surface-tint); color:var(--fg);
+}
+.mr-plan.is-featured .mr-badge{background:var(--primary); color:#FFF8F2;}
+.mr-price{font-family:"Jost",sans-serif; font-weight:600; font-size:2rem; line-height:1.1; color:var(--fg);}
+.mr-price small{display:block; font-size:.95rem; font-weight:400; color:var(--muted); margin-top:4px;}
+.mr-rows{margin:0;}
+.mr-rows div{display:flex; justify-content:space-between; gap:16px; padding:10px 0; border-top:1px solid var(--border); font-size:.97rem;}
+.mr-rows dt{color:var(--muted); flex:1 1 auto;}
+.mr-rows dd{margin:0; font-family:"Jost",sans-serif; font-weight:600; text-align:right; white-space:nowrap;}
+.mr-actions{display:flex; flex-direction:column; gap:10px; margin-top:auto;}
+.mr-actions .btn{width:100%; text-align:center;}
+#pricing,#pricing-india,#pricing-gulf{scroll-margin-top:84px;}
+@media (max-width:900px){ .mr-price{font-size:1.75rem;} }
 </style><style>
 /* Generated standalone page: one section, always visible. */
 .page{display:block!important;}
@@ -481,6 +510,8 @@ have not yet seen it.</p>
 perfectly good place to start. It does mean the questions worth asking are
 different, and more urgent, and better asked in a room with somebody whose job
 is to keep the conversation honest.</p>
+<p>We have written more about this in
+<a href="/blog/premarital-counselling-arranged-marriage/">premarital counselling when your families introduced you</a>.</p>
 <p>Consider a pattern we see often, and this is illustrative rather than any real
 couple. Two people, introduced in March, marrying in October. Both are warm,
 both are willing, both have quietly decided that the other seems easy-going. Then
@@ -561,6 +592,11 @@ half an hour.</p>
 <a href="/about/">who we are</a>, or <a href="/contact/">start with the free call</a>. If you are
 already married and reading this wishing you had done it earlier, that is very
 common, and <a href="/couples/">counselling for couples</a> is a real option at any stage.</p>
+<p>If you would rather join a course with a date and a price, <a href="/marriage-ready/">Marriage Ready</a>
+is our six-week online premarital counselling course: six live Zoom sessions with
+six to eight couples, the Prepare/Enrich assessment included, from Friday
+13 November 2026. It costs ₹24,000 per couple, or AED 2,000 in the Gulf, paid
+online.</p>
 <hr/>
 <p><em>Written by Pradeep Mcwin (M.A., Marriage and Family Counselling) and Gomathi
 Mcwin (Diploma, Marriage and Family Counselling), who have practised together in
@@ -583,6 +619,7 @@ situation, <a href="/contact/">start with a free, confidential 30-minute call</a
 <li><a href="/parenting/">Parenting support</a></li>
 <li><a href="/life-coaching/">Life coaching</a></li>
 <li><a href="/pre-marriage/">Pre-marriage coaching</a></li>
+<li><a href="/marriage-ready/">Marriage Ready course</a></li>
 <li><a href="/seminars/">Seminars and training</a></li>
 </ul>
 </div>
@@ -634,6 +671,7 @@ var TITLES = {
   "parenting":"Parenting support | Famarliar",
   "life":"Individual life coaching | Famarliar",
   "pre-marriage":"Pre-marriage coaching for engaged couples | Famarliar",
+  "marriage-ready":"Marriage Ready | Online premarital counselling course",
   "seminars":"Marriage and family seminars and workshops | Famarliar",
   "about":"About Pradeep Mcwin and Famarliar",
   "contact":"Contact Famarliar | Byrathi, Bangalore"

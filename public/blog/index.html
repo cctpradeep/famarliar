@@ -316,6 +316,35 @@ footer.site a:hover{color:var(--dark-fg); text-decoration:underline;}
   *{transition-duration:.01ms !important; animation-duration:.01ms !important;}
   html{scroll-behavior:auto;}
 }
+
+/* ============================================================
+   19. MARRIAGE READY  (weekly outline, time table, pricing cards)
+   ============================================================ */
+.mr-weeks{margin:22px 0 0; padding-left:1.4rem;}
+.mr-weeks li{margin-bottom:.55rem;}
+.mr-table{width:100%; border-collapse:collapse; margin-top:22px; font-size:.99rem;}
+.mr-table th,.mr-table td{text-align:left; padding:12px 14px; border-bottom:1px solid var(--border); vertical-align:top;}
+.mr-table th{font-family:"Jost",sans-serif; font-weight:600;}
+.mr-track{margin-top:34px;}
+.mr-track h3{margin-bottom:14px;}
+.mr-plan{display:flex; flex-direction:column; gap:16px;}
+.mr-plan.is-featured{border-color:var(--primary); box-shadow:inset 0 0 0 1px var(--primary);}
+.mr-badge{
+  display:inline-block; align-self:flex-start; font-family:"Jost",sans-serif; font-weight:600;
+  font-size:.82rem; letter-spacing:.02em; padding:5px 12px; border-radius:999px;
+  background:var(--surface-tint); color:var(--fg);
+}
+.mr-plan.is-featured .mr-badge{background:var(--primary); color:#FFF8F2;}
+.mr-price{font-family:"Jost",sans-serif; font-weight:600; font-size:2rem; line-height:1.1; color:var(--fg);}
+.mr-price small{display:block; font-size:.95rem; font-weight:400; color:var(--muted); margin-top:4px;}
+.mr-rows{margin:0;}
+.mr-rows div{display:flex; justify-content:space-between; gap:16px; padding:10px 0; border-top:1px solid var(--border); font-size:.97rem;}
+.mr-rows dt{color:var(--muted); flex:1 1 auto;}
+.mr-rows dd{margin:0; font-family:"Jost",sans-serif; font-weight:600; text-align:right; white-space:nowrap;}
+.mr-actions{display:flex; flex-direction:column; gap:10px; margin-top:auto;}
+.mr-actions .btn{width:100%; text-align:center;}
+#pricing,#pricing-india,#pricing-gulf{scroll-margin-top:84px;}
+@media (max-width:900px){ .mr-price{font-size:1.75rem;} }
 </style><style>
 /* Generated standalone page: one section, always visible. */
 .page{display:block!important;}
@@ -370,7 +399,7 @@ nav.main.is-open a.nav-badge{background:none;border:0;border-radius:0;
 <a aria-current="page" class="nav-badge" href="/blog/">Blogs</a>
 </nav>
 </div>
-</header><main><section><div class="wrap narrow"><h1>Writing on marriage, family and life.</h1><p class="lede">Practical thinking from a married counselling team in Bangalore. No jargon, no easy answers.</p><ul class="post-list"><li><a class="card" href="/blog/questions-to-ask-before-marriage/"><h2>Questions to Ask Before Marriage, and What to Listen For</h2><p class="meta"><time datetime="2026-09-15">15 September 2026</time></p><p>Fewer questions, better used: what to ask before marriage about money, in-laws, work and children, with notes for arranged marriages in India.</p><span class="go">Read the article</span></a></li><li><a class="card" href="/blog/what-happens-in-premarital-counselling/"><h2>What Happens in Premarital Counselling</h2><p class="meta"><time datetime="2026-09-09">9 September 2026</time></p><p>What premarital counselling actually involves, from two Bangalore counsellors who sat on the client side first. Includes arranged marriages and in-laws.</p><span class="go">Read the article</span></a></li></ul></div></section></main><footer class="site">
+</header><main><section><div class="wrap narrow"><h1>Writing on marriage, family and life.</h1><p class="lede">Practical thinking from a married counselling team in Bangalore. No jargon, no easy answers.</p><ul class="post-list"><li><a class="card" href="/blog/premarital-counselling-arranged-marriage/"><h2>Premarital Counselling for an Arranged Marriage</h2><p class="meta"><time datetime="2026-09-18">18 September 2026</time></p><p>You said yes after five meetings. How premarital counselling for arranged marriage works, from two married counsellors in Bangalore.</p><span class="go">Read the article</span></a></li><li><a class="card" href="/blog/questions-to-ask-before-marriage/"><h2>Questions to Ask Before Marriage, and What to Listen For</h2><p class="meta"><time datetime="2026-09-15">15 September 2026</time></p><p>Fewer questions, better used: what to ask before marriage about money, in-laws, work and children, with notes for arranged marriages in India.</p><span class="go">Read the article</span></a></li><li><a class="card" href="/blog/what-happens-in-premarital-counselling/"><h2>What Happens in Premarital Counselling</h2><p class="meta"><time datetime="2026-09-09">9 September 2026</time></p><p>What premarital counselling actually involves, from two Bangalore counsellors who sat on the client side first. Includes arranged marriages and in-laws.</p><span class="go">Read the article</span></a></li></ul></div></section></main><footer class="site">
 <div class="wrap">
 <div class="foot-grid">
 <div>
@@ -386,6 +415,7 @@ nav.main.is-open a.nav-badge{background:none;border:0;border-radius:0;
 <li><a href="/parenting/">Parenting support</a></li>
 <li><a href="/life-coaching/">Life coaching</a></li>
 <li><a href="/pre-marriage/">Pre-marriage coaching</a></li>
+<li><a href="/marriage-ready/">Marriage Ready course</a></li>
 <li><a href="/seminars/">Seminars and training</a></li>
 </ul>
 </div>
@@ -437,6 +467,7 @@ var TITLES = {
   "parenting":"Parenting support | Famarliar",
   "life":"Individual life coaching | Famarliar",
   "pre-marriage":"Pre-marriage coaching for engaged couples | Famarliar",
+  "marriage-ready":"Marriage Ready | Online premarital counselling course",
   "seminars":"Marriage and family seminars and workshops | Famarliar",
   "about":"About Pradeep Mcwin and Famarliar",
   "contact":"Contact Famarliar | Byrathi, Bangalore"
