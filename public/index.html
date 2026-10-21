@@ -366,6 +366,19 @@ footer.site a:hover{color:var(--dark-fg); text-decoration:underline;}
 .mr-actions .btn{width:100%; text-align:center;}
 #pricing{scroll-margin-top:84px;}
 @media (max-width:900px){ .mr-price{font-size:1.75rem;} }
+
+/* ============================================================
+   20. MARRIAGE READY VIDEO BAND  (homepage, below the hero)
+   ============================================================ */
+.mr-band{padding:40px 0 64px;}
+.mr-band-grid{display:grid; grid-template-columns:1.05fr .95fr; gap:56px; align-items:center;}
+.mr-band-media{position:relative; border-radius:20px; overflow:hidden; background:var(--bg);}
+.mr-band-video{display:block; width:100%; height:auto; aspect-ratio:16/9; background:var(--bg);}
+.mr-sound{position:absolute; right:14px; bottom:14px; font-family:"Jost",sans-serif; font-weight:600; font-size:.9rem; padding:9px 16px; min-height:40px; border-radius:999px; border:1.5px solid var(--border); background:rgba(255,253,250,.94); color:var(--fg); cursor:pointer;}
+.mr-sound:hover{border-color:var(--fg);}
+.mr-sound[aria-pressed="true"]{background:var(--primary); border-color:var(--primary); color:#FFF8F2;}
+.mr-band-kicker{font-family:"Jost",sans-serif; font-weight:600; font-size:.84rem; letter-spacing:.12em; text-transform:uppercase; color:var(--primary); margin:0 0 10px;}
+@media (max-width:900px){ .mr-band{padding:28px 0 48px;} .mr-band-grid{grid-template-columns:1fr; gap:28px;} }
 </style>
 <style>
 /* "Blogs" in the main nav, set apart as a badge. */
@@ -426,6 +439,27 @@ nav.main.is-open a.nav-badge{background:none;border:0;border-radius:0;
 <img alt="Pradeep Mcwin and his wife, the counsellors behind Famarliar, standing together." decoding="async" height="1740" src="/pradeep-and-gomathi.jpg" width="1100"/>
 </div>
 <p class="photo-caption">Pradeep Mcwin and Gomathi Mcwin, trained counsellors and married 13 years.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="mr-band-title" class="mr-band">
+<div class="wrap mr-band-grid">
+<div class="mr-band-media">
+<video aria-label="Marriage Ready: two wedding rings join into one loop and a sprout grows where they meet" autoplay="" class="mr-band-video" height="720" id="mr-video" loop="" muted="" playsinline="" poster="/marriage-ready-cover-poster.webp" preload="metadata" width="1280">
+<source src="/marriage-ready-cover.webm" type="video/webm"/>
+<source src="/marriage-ready-cover.mp4" type="video/mp4"/>
+<img alt="Marriage Ready: two terracotta rings joined into one loop, with a gold sprout where they meet." height="720" src="/marriage-ready-cover-poster.webp" width="1280"/>
+</video>
+<button aria-controls="mr-video" aria-pressed="false" class="mr-sound" id="mr-sound" type="button">Play with sound</button>
+</div>
+<div class="mr-band-copy">
+<p class="mr-band-kicker">Marriage Ready</p>
+<h2 id="mr-band-title">Begin with a foundation you built together.</h2>
+<p>Marriage Ready is our six-week online course for engaged couples and newlyweds: one live Zoom session a week with both of us, and the Prepare/Enrich assessment before you start.</p>
+<div class="btn-row">
+<a class="btn btn-primary" href="/marriage-ready/">See Marriage Ready</a>
+</div>
+<p class="note-under-btn">Fridays, 7:00 to 8:30 pm IST. Introductory cohort from 13 November 2026.</p>
 </div>
 </div>
 </section>
@@ -753,6 +787,40 @@ if(form){
     });
   });
 }
+</script>
+<script>
+/* Marriage Ready band: muted autoplay, sound on request, no autoplay under reduced motion.
+   Runs harmlessly on pages without the band. */
+(function(){
+  var v = document.getElementById("mr-video"), b = document.getElementById("mr-sound");
+  if(!v || !b || typeof v.play !== "function") return;
+  var reduce = typeof window.matchMedia === "function" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function label(){
+    var on = !v.paused && !v.muted;
+    b.setAttribute("aria-pressed", on ? "true" : "false");
+    b.textContent = on ? (reduce ? "Pause" : "Mute") : "Play with sound";
+  }
+  function tryPlay(){ var p = v.play(); if(p && typeof p.catch === "function"){ p.catch(function(){}); } }
+  if(reduce){
+    v.removeAttribute("autoplay"); v.pause();
+    try{ v.currentTime = 0; }catch(e){}
+    v.load();
+  } else {
+    v.muted = true;
+    tryPlay();
+  }
+  b.addEventListener("click", function(){
+    if(v.paused){ v.muted = false; tryPlay(); }
+    else if(reduce){ v.pause(); v.muted = true; }
+    else { v.muted = !v.muted; }
+    label();
+  });
+  v.addEventListener("play", label); v.addEventListener("pause", label); v.addEventListener("volumechange", label);
+  label();
+})();
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"VideoObject","name":"Marriage Ready: two rings becoming one loop","description":"Animated mark for Marriage Ready, Famarliar's six-week online premarital counselling course for engaged couples and newlyweds.","thumbnailUrl":["https://www.famarliar.com/marriage-ready-cover-poster.webp"],"contentUrl":"https://www.famarliar.com/marriage-ready-cover.mp4","uploadDate":"2026-10-21","duration":"PT18S","publisher":{"@type":"ProfessionalService","@id":"https://www.famarliar.com/#practice","name":"Famarliar"}}
 </script>
 </body>
 </html>

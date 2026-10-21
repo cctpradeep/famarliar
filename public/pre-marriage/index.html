@@ -345,6 +345,19 @@ footer.site a:hover{color:var(--dark-fg); text-decoration:underline;}
 .mr-actions .btn{width:100%; text-align:center;}
 #pricing{scroll-margin-top:84px;}
 @media (max-width:900px){ .mr-price{font-size:1.75rem;} }
+
+/* ============================================================
+   20. MARRIAGE READY VIDEO BAND  (homepage, below the hero)
+   ============================================================ */
+.mr-band{padding:40px 0 64px;}
+.mr-band-grid{display:grid; grid-template-columns:1.05fr .95fr; gap:56px; align-items:center;}
+.mr-band-media{position:relative; border-radius:20px; overflow:hidden; background:var(--bg);}
+.mr-band-video{display:block; width:100%; height:auto; aspect-ratio:16/9; background:var(--bg);}
+.mr-sound{position:absolute; right:14px; bottom:14px; font-family:"Jost",sans-serif; font-weight:600; font-size:.9rem; padding:9px 16px; min-height:40px; border-radius:999px; border:1.5px solid var(--border); background:rgba(255,253,250,.94); color:var(--fg); cursor:pointer;}
+.mr-sound:hover{border-color:var(--fg);}
+.mr-sound[aria-pressed="true"]{background:var(--primary); border-color:var(--primary); color:#FFF8F2;}
+.mr-band-kicker{font-family:"Jost",sans-serif; font-weight:600; font-size:.84rem; letter-spacing:.12em; text-transform:uppercase; color:var(--primary); margin:0 0 10px;}
+@media (max-width:900px){ .mr-band{padding:28px 0 48px;} .mr-band-grid{grid-template-columns:1fr; gap:28px;} }
 </style><style>
 /* Generated standalone page: one section, always visible. */
 .page{display:block!important;}
