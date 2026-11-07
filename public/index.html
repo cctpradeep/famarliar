@@ -379,6 +379,19 @@ footer.site a:hover{color:var(--dark-fg); text-decoration:underline;}
 .mr-sound[aria-pressed="true"]{background:var(--primary); border-color:var(--primary); color:#FFF8F2;}
 .mr-band-kicker{font-family:"Jost",sans-serif; font-weight:600; font-size:.84rem; letter-spacing:.12em; text-transform:uppercase; color:var(--primary); margin:0 0 10px;}
 @media (max-width:900px){ .mr-band{padding:28px 0 48px;} .mr-band-grid{grid-template-columns:1fr; gap:28px;} }
+/* ============================================================
+   21. COUNSELLOR PROFILES  (about page cards, profile pages)
+   ============================================================ */
+.profile-grid{display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:22px;}
+.profile-card{display:block; background:var(--surface); border:1px solid var(--border); border-radius:18px; padding:16px; color:inherit; text-decoration:none;}
+.profile-card img{display:block; width:100%; height:auto; aspect-ratio:3/4; object-fit:cover; border-radius:12px;}
+.profile-card h3{margin:14px 0 6px;}
+.profile-card p{margin:0 0 10px; color:var(--muted); font-size:.96rem;}
+.profile-link{color:var(--primary); font-weight:600; font-family:"Jost",sans-serif;}
+.profile-card:hover{border-color:var(--primary);}
+.plain-list{margin:14px 0 0; padding-left:1.2em;}
+.plain-list li{margin:6px 0;}
+@media (max-width:640px){ .profile-grid{grid-template-columns:1fr;} }
 </style>
 <style>
 /* "Blogs" in the main nav, set apart as a badge. */
@@ -401,7 +414,7 @@ nav.main.is-open a.nav-badge{background:none;border:0;border-radius:0;
 .home-posts .meta{font-family:"Jost",sans-serif;font-size:.88rem;
   margin:0 0 .55rem;}
 </style>
-<meta content="index,follow,max-image-preview:large" name="robots"/><meta content="Famarliar | Love, learned and lived" name="twitter:title"/><meta content="Love, learned and lived. Trained counsellors for couples, families and individuals. Start with a free, confidential 30-minute call. Online or in Bangalore." name="twitter:description"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "@id": "https://www.famarliar.com/#practice", "name": "Famarliar", "description": "Marriage, family and life counselling in Bangalore by a married, professionally trained counselling team.", "url": "https://www.famarliar.com/", "telephone": "+91-96069-22972", "priceRange": "$$", "address": {"@type": "PostalAddress", "addressLocality": "Byrathi, Bangalore", "addressRegion": "Karnataka", "addressCountry": "IN"}, "areaServed": [{"@type": "City", "name": "Bangalore"}, {"@type": "Country", "name": "India"}], "availableLanguage": ["English", "Tamil", "Kannada"], "founder": [{"@type": "Person", "name": "Pradeep Mcwin", "jobTitle": "Marriage and Family Counsellor", "hasCredential": "M.A. Marriage and Family Counselling"}, {"@type": "Person", "name": "Gomathi Mcwin", "jobTitle": "Marriage and Family Counsellor", "hasCredential": "Diploma in Marriage and Family Counselling"}], "sameAs": ["https://instagram.com/pradeepmcwinofficial", "https://youtube.com/@pradeepmcwinofficial"]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Famarliar", "url": "https://www.famarliar.com/"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is this really confidential?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. What is said in our sessions stays there. We don't discuss clients, we don't record sessions, and nobody in your family, church or workplace hears anything from us. For many couples this is the single biggest worry, and it is the first thing we cover on the free call."}}, {"@type": "Question", "name": "What if my spouse won't come?", "acceptedAnswer": {"@type": "Answer", "text": "Come on your own. Reaching out by yourself is a real place to start, and it is often the most motivated partner who makes the first move. We will work with you as you are, and if your partner becomes willing later, we can bring them in then."}}, {"@type": "Question", "name": "Does needing counselling mean our marriage has failed?", "acceptedAnswer": {"@type": "Answer", "text": "No. Couples who ask for help are usually the ones who care most about staying together. Getting help early is what strong marriages do, and the couples who wait are the ones who run out of options."}}, {"@type": "Question", "name": "What does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "The first 30-minute call is free. If you decide to go further, we explain every cost plainly on that call, with no obligation and no surprises later. Nothing is charged until you have chosen to continue."}}, {"@type": "Question", "name": "What if we've left it too late?", "acceptedAnswer": {"@type": "Answer", "text": "We won't promise you that every marriage can be rebuilt, because that wouldn't be honest. What we can say is that couples who still care enough to be afraid usually have more to work with than they think. A free call will tell you more than guessing will."}}, {"@type": "Question", "name": "Do you meet online or in person?", "acceptedAnswer": {"@type": "Answer", "text": "Both. Sessions run online, which many couples prefer for privacy and convenience, or in person in Byrathi, Bangalore. The exact location is shared once your call is booked."}}, {"@type": "Question", "name": "What languages do you counsel in?", "acceptedAnswer": {"@type": "Answer", "text": "English mainly, and we also counsel in Tamil and Kannada. You shouldn't have to translate your own marriage."}}, {"@type": "Question", "name": "How soon can we start?", "acceptedAnswer": {"@type": "Answer", "text": "Message us on WhatsApp and we'll find a time for the free call. We usually reply within 24 to 48 hours."}}]}</script></head>
+<meta content="index,follow,max-image-preview:large" name="robots"/><meta content="Famarliar | Love, learned and lived" name="twitter:title"/><meta content="Love, learned and lived. Trained counsellors for couples, families and individuals. Start with a free, confidential 30-minute call. Online or in Bangalore." name="twitter:description"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "@id": "https://www.famarliar.com/#practice", "name": "Famarliar", "description": "Marriage, family and life counselling in Bangalore by a married, professionally trained counselling team.", "url": "https://www.famarliar.com/", "telephone": "+91-96069-22972", "priceRange": "$$", "address": {"@type": "PostalAddress", "addressLocality": "Byrathi, Bangalore", "addressRegion": "Karnataka", "addressCountry": "IN"}, "areaServed": [{"@type": "City", "name": "Bangalore"}, {"@type": "Country", "name": "India"}], "availableLanguage": ["English", "Tamil", "Kannada"], "founder": [{"@type": "Person", "name": "Pradeep Mcwin", "url": "https://www.famarliar.com/about/pradeep/", "jobTitle": "Marriage and Family Counsellor", "hasCredential": "M.A. Marriage and Family Counselling"}, {"@type": "Person", "name": "Gomathi Mcwin", "url": "https://www.famarliar.com/about/gomathi/", "jobTitle": "Marriage and Family Counsellor", "hasCredential": "Diploma in Marriage and Family Counselling"}], "sameAs": ["https://instagram.com/pradeepmcwinofficial", "https://youtube.com/@pradeepmcwinofficial"]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Famarliar", "url": "https://www.famarliar.com/"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is this really confidential?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. What is said in our sessions stays there. We don't discuss clients, we don't record sessions, and nobody in your family, church or workplace hears anything from us. For many couples this is the single biggest worry, and it is the first thing we cover on the free call."}}, {"@type": "Question", "name": "What if my spouse won't come?", "acceptedAnswer": {"@type": "Answer", "text": "Come on your own. Reaching out by yourself is a real place to start, and it is often the most motivated partner who makes the first move. We will work with you as you are, and if your partner becomes willing later, we can bring them in then."}}, {"@type": "Question", "name": "Does needing counselling mean our marriage has failed?", "acceptedAnswer": {"@type": "Answer", "text": "No. Couples who ask for help are usually the ones who care most about staying together. Getting help early is what strong marriages do, and the couples who wait are the ones who run out of options."}}, {"@type": "Question", "name": "What does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "The first 30-minute call is free. If you decide to go further, we explain every cost plainly on that call, with no obligation and no surprises later. Nothing is charged until you have chosen to continue."}}, {"@type": "Question", "name": "What if we've left it too late?", "acceptedAnswer": {"@type": "Answer", "text": "We won't promise you that every marriage can be rebuilt, because that wouldn't be honest. What we can say is that couples who still care enough to be afraid usually have more to work with than they think. A free call will tell you more than guessing will."}}, {"@type": "Question", "name": "Do you meet online or in person?", "acceptedAnswer": {"@type": "Answer", "text": "Both. Sessions run online, which many couples prefer for privacy and convenience, or in person in Byrathi, Bangalore. The exact location is shared once your call is booked."}}, {"@type": "Question", "name": "What languages do you counsel in?", "acceptedAnswer": {"@type": "Answer", "text": "English mainly, and we also counsel in Tamil and Kannada. You shouldn't have to translate your own marriage."}}, {"@type": "Question", "name": "How soon can we start?", "acceptedAnswer": {"@type": "Answer", "text": "Message us on WhatsApp and we'll find a time for the free call. We usually reply within 24 to 48 hours."}}]}</script></head>
 <body>
 <header class="site">
 <div class="wrap bar">
@@ -436,7 +449,7 @@ nav.main.is-open a.nav-badge{background:none;border:0;border-radius:0;
 </div>
 <div>
 <div class="hero-photo">
-<img alt="Pradeep Mcwin and his wife, the counsellors behind Famarliar, standing together." decoding="async" height="1740" src="/pradeep-and-gomathi.jpg" width="1100"/>
+<img alt="Pradeep and Gomathi Mcwin, the counsellors behind Famarliar." decoding="async" height="1740" src="/pradeep-and-gomathi.jpg" width="1100"/>
 </div>
 <p class="photo-caption">Pradeep Mcwin and Gomathi Mcwin, trained counsellors and married 13 years.</p>
 </div>
@@ -484,7 +497,7 @@ nav.main.is-open a.nav-badge{background:none;border:0;border-radius:0;
 <div class="narrow">
 <h2>Trained counsellors, not just a couple with opinions.</h2>
 <p>We know how heavy this feels. When a marriage is in trouble, everyone has advice, and most of it comes from people who love you but have never sat with a couple in crisis. We have.</p>
-<p>Between us we hold a master's degree and a diploma in marriage and family counselling, and Pradeep is currently studying for an MDiv. We have been married 13 years, and we have two children. So we bring both the training and the lived experience of a marriage that has had to be worked at.</p>
+<p>Between us we hold a master's degree and a diploma in marriage and family counselling, and Pradeep is pursuing PhD research on faith-integrated couple therapy. We have been married 13 years, and we have two children. So we bring both the training and the lived experience of a marriage that has had to be worked at.</p>
 <p>That combination is the whole reason Famarliar exists. Structured counselling, grounded in real clinical practice, delivered by two people who will treat you like a couple rather than a case.</p>
 </div>
 </div>
@@ -613,6 +626,10 @@ nav.main.is-open a.nav-badge{background:none;border:0;border-radius:0;
 
 <!-- ==================== ABOUT ==================== -->
 
+<!-- ==================== PRADEEP ==================== -->
+
+<!-- ==================== GOMATHI ==================== -->
+
 <!-- ==================== CONTACT ==================== -->
 
 </main>
@@ -660,7 +677,7 @@ nav.main.is-open a.nav-badge{background:none;border:0;border-radius:0;
 </a>
 <script>/* The service, about and contact sections now have their own pages.
    Old links such as famarliar.com/#/couples forward to them. */
-(function(){ var moved = {"couples": "/couples/", "family": "/family/", "parenting": "/parenting/", "life": "/life-coaching/", "pre-marriage": "/pre-marriage/", "marriage-ready": "/marriage-ready/", "seminars": "/seminars/", "about": "/about/", "contact": "/contact/"};
+(function(){ var moved = {"couples": "/couples/", "family": "/family/", "parenting": "/parenting/", "life": "/life-coaching/", "pre-marriage": "/pre-marriage/", "marriage-ready": "/marriage-ready/", "seminars": "/seminars/", "about": "/about/", "contact": "/contact/", "pradeep": "/about/pradeep/", "gomathi": "/about/gomathi/"};
   var id = location.hash.replace("#/", "").trim();
   if (moved[id]) { location.replace(moved[id]); } })();
 
